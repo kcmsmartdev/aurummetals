@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURUM METALS SRL</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <script rel="preload" src="https://kit.fontawesome.com/8c2f1b82d6.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="w-full h-full relative ">
+    <header class="flex flex-col ">
+        <div class="w-full lg:h-11 bg-[#FFD585] text-[0.875rem] text-[#323218] font-Montserrat-SemiBold p-3 lg:px-24 lg:flex justify-between items-center lg:bg-[#323218] lg:text-[#FFD585]">
+
+            <div calss="flex items-center gap-0.5 text-center">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:esteban.gamarra@aurummetals.com">esteban.gamarra@aurummetals.com</a>
+            </div>
+
+            <div calss="flex items-center gap-0.5 text-center">
+                <i class="fa-solid fa-phone"></i>
+                <a href="callto:+51 975889555">+51 975 889 555</a>
+            </div>
+
+             
+             <div class=" mx-0.5 text-center hidden md:hidden lg:flex">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">Av. Elmer Faucett - Tomas Val Nro. E1 Int. 303e (Centro Aéreo Comercial)</a>
+            </div>
+        </div>
+        <nav class="w-full flex justify-between items-center px-3 absolute top-20 lg:px-24 lg:top-14 font-Montserrat-Regular">
+            <a href="/index.html"><img src="./assets/imagenes/logo-aurumMetals.webp" alt="logo-aurumMetals" width="60px" height="60px"></a>
+            <ul class="w-full hidden lg:flex justify-end items-center gap-9 text-[#F3F3F3]">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Actividad</a></li>
+                <li><a href="#">Responsabilidad</a></li>
+                <li><a href="#">Socios Estrategicos</a></li>
+                <li class="px-8 py-2 bg-[#D4AF37] rounded-2xl text-black"><a href="#">Contacto</a></li>
+            </ul>
+            <span id="menuBar" class="flex bg-amber-50/10 p-2 rounded-[100%] lg:hidden">
+                <img src="./assets/imagenes/icon-menu.png" width="45px" height="45px">
+            </span>
+            
+            
+        </nav>
+
+        <!-- MENU MÓVIL -->
+        <div id="menu-mobil" class="hidden w-full h-full bg-black   px-3  absolute top-20 lg:relative">
+            <div class="w-full flex justify-between">
+                <a href="/index.html"><img src="./assets/imagenes/logo-aurumMetals.webp" alt="logo-aurumMetals" width="60px" height="60px"></a>
+                <span id="menuBar_cerrar" class="hidden bg-amber-50/10 p-2 rounded-[100%] lg:hidden">
+                <img src="./assets/imagenes/icon-close.png" width="45px" height="45px">
+            </span>
+            </div>
+            <div class="flex flex-col items-center gap-5 text-white mt-10 text-3xl">
+                <a href="/index.html">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Actividad</a>
+            <a href="#">Responsabilidad</a>
+            <a href="#">Socios Estrategicos</a>
+            <a href="#">Contacto</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class=" w-full h-screen bg-[url('/assets/imagenes/bg-hero.webp')] bg-cover bg-center flex flex-col justify-center lg:items-center gap-5 p-3">
+            <h1 id="h1" class="text-white uppercase font-Montserrat-Black text-[1.875rem] lg:text-[4.000rem] lg:text-center tracking-tighter mt-10">Por una minería <br class=" lg:hidden"> justa y <br class="hidden lg:block"> responsable</h1>
+            <h2 id="h2" class="hidden text-white uppercase font-Montserrat-Black text-[1.875rem] lg:text-[4.000rem] lg:text-center tracking-tighter mt-10">Operaciones social y <br>  ambientalmente responsable</h2>
+            <p class="w-full lg:w-[691px] lg:text-center text-[1.250rem] font-Montserrat-Regular text-[#F3F3F3] mt-5 tracking-0.5rem leading-6">
+                Impulsamos prácticas sostenibles que respetan al medio ambiente, dignifican al trabajador y generan desarrollo real en nuestras comunidades.
+            </p>
+            <div class="w-full flex justify-center mt-5">
+                <a id="btnTitulo1" href="#" class="w-[35px] h-[14px] border-2 border-[#FFD585] rounded-2xl">     </a>
+                <a id="btnTitulo2" href="#" class="w-[35px] h-[14px] border-2 border-[#FFD585] bg-[#FFD585] rounded-2xl">     </a>
+            </div>
+            <a href="#" class="px-10  py-4 bg-[#CBA135] rounded-2xl font-Montserrat-Regular font-bold text-[1rem] mt-5">CONOCE NUESTROS SERVICIOS</a>
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

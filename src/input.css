@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url(/assets/fuentes/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(/assets/fuentes/Montserrat-Blold.ttf);
+}
+
+
+@font-face {
+    font-family: "Montserrat-ExtraLight";
+    src: url(/assets/fuentes/Montserrat-ExtraLight.ttf);
+}
+
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(/assets/fuentes/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(/assets/fuentes/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url(/assets/fuentes/Montserrat-SemiBold.ttf);
+}
+
+
+@theme{
+--font-Montserrat-Black: "Montserrat-Black";
+--font-Montserrat-Bold: "Montserrat-Bold";
+--font-Montserrat-ExtraLight: "Montserrat-ExtraLight";
+--font-Montserrat-Medium: "Montserrat-Medium";
+--font-Montserrat-Regular: "Montserrat-Regular";
+--font-Montserrat-SemiBold: "Montserrat-SemiBold";
+}
