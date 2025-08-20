@@ -2,41 +2,41 @@
 
 @font-face {
     font-family: "Montserrat-Black";
-    src: url(./assets/fuentes/Montserrat-Black.ttf);
+    src: url(assets/fuentes/Montserrat-Black.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Bold";
-    src: url(./assets/fuentes/Montserrat-Blold.ttf);
+    src: url(assets/fuentes/Montserrat-Blold.ttf) format("truetype");
 }
 
 
 @font-face {
     font-family: "Montserrat-ExtraLight";
-    src: url(./assets/fuentes/Montserrat-ExtraLight.ttf);
+    src: url(assets/fuentes/Montserrat-ExtraLight.ttf)format("truetype");
 }
 
 
 @font-face {
     font-family: "Montserrat-Medium";
-    src: url(./assets/fuentes/Montserrat-Medium.ttf);
+    src: url(assets/fuentes/Montserrat-Medium.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url(./assets/fuentes/Montserrat-Regular.ttf);
+    src: url(assets/fuentes/Montserrat-Regular.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-SemiBold";
-    src: url(./assets/fuentes/Montserrat-SemiBold.ttf);
+    src: url(assets/fuentes/Montserrat-SemiBold.ttf) format("truetype");
 }
 
 @theme{
---font-Montserrat-Black: "Montserrat-Black";
---font-Montserrat-Bold: "Montserrat-Bold";
---font-Montserrat-ExtraLight: "Montserrat-ExtraLight";
---font-Montserrat-Medium: "Montserrat-Medium";
---font-Montserrat-Regular: "Montserrat-Regular";
---font-Montserrat-SemiBold: "Montserrat-SemiBold";
+--font-Montserrat-Black: "Montserrat-Black", "sans-serif";
+--font-Montserrat-Bold: "Montserrat-Bold", "sans-serif";
+--font-Montserrat-ExtraLight: "Montserrat-ExtraLight", "sans-serif";
+--font-Montserrat-Medium: "Montserrat-Medium", "sans-serif";
+--font-Montserrat-Regular: "Montserrat-Regular", "sans-serif";
+--font-Montserrat-SemiBold: "Montserrat-SemiBold", "sans-serif";
 }
