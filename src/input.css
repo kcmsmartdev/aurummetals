@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: "Montserrat-Black";
-    src: url("/assets/fuentes/Montserrat-Black.ttf") format("truetype");
+    font-family: "MontserratBlack";
+    src: url('./assets/fuentes/Montserrat-Black.ttf') format("truetype");
+    font-display: swap;
 }
 
 @font-face {
@@ -33,7 +34,7 @@
 }
 
 @theme{
---font-Montserrat-Black: "Montserrat-Black", "sans-serif";
+--font-Montserrat-Black: "MontserratBlack";
 --font-Montserrat-Bold: "Montserrat-Bold", "sans-serif";
 --font-Montserrat-ExtraLight: "Montserrat-ExtraLight", "sans-serif";
 --font-Montserrat-Medium: "Montserrat-Medium", "sans-serif";
