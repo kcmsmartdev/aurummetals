@@ -2,34 +2,34 @@
 
 @font-face {
     font-family: "Montserrat-Black";
-    src: url('assets/fuentes/Montserrat-Black.ttf') format("truetype");
+    src: url("/assets/fuentes/Montserrat-Black.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Bold";
-    src: url(assets/fuentes/Montserrat-Blold.ttf) format("truetype");
+    src: url("/assets/fuentes/Montserrat-Blold.ttf") format("truetype");
 }
 
 
 @font-face {
     font-family: "Montserrat-ExtraLight";
-    src: url(assets/fuentes/Montserrat-ExtraLight.ttf)format("truetype");
+    src: url("/assets/fuentes/Montserrat-ExtraLight.ttf")format("truetype");
 }
 
 
 @font-face {
     font-family: "Montserrat-Medium";
-    src: url(assets/fuentes/Montserrat-Medium.ttf) format("truetype");
+    src: url("/assets/fuentes/Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url(assets/fuentes/Montserrat-Regular.ttf) format("truetype");
+    src: url("/assets/fuentes/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-SemiBold";
-    src: url(assets/fuentes/Montserrat-SemiBold.ttf) format("truetype");
+    src: url("/assets/fuentes/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 @theme{
