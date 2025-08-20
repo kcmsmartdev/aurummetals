@@ -19,7 +19,6 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-Montserrat-Black: "Montserrat-Black";
-    --font-Montserrat-Bold: "Montserrat-Bold";
     --font-Montserrat-Regular: "Montserrat-Regular";
     --font-Montserrat-SemiBold: "Montserrat-SemiBold";
   }
@@ -182,9 +181,6 @@
   .top-20 {
     top: calc(var(--spacing) * 20);
   }
-  .mx-0 {
-    margin-inline: calc(var(--spacing) * 0);
-  }
   .mx-0\.5 {
     margin-inline: calc(var(--spacing) * 0.5);
   }
@@ -199,9 +195,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .h-\[14px\] {
     height: 14px;
@@ -218,12 +211,6 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -239,9 +226,6 @@
   .justify-end {
     justify-content: flex-end;
   }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
-  }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
   }
@@ -256,10 +240,6 @@
   }
   .rounded-\[100\%\] {
     border-radius: 100%;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -277,9 +257,6 @@
   .bg-\[\#FFD585\] {
     background-color: #FFD585;
   }
-  .bg-amber-50 {
-    background-color: var(--color-amber-50);
-  }
   .bg-amber-50\/10 {
     background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -288,12 +265,6 @@
   }
   .bg-black {
     background-color: var(--color-black);
-  }
-  .bg-\[url\(\'\.\/assets\/imagenes\/bg-hero\.webp\'\)\] {
-    background-image: url('./assets/imagenes/bg-hero.webp');
-  }
-  .bg-\[url\(\'\/assets\/imagenes\/bg-hero\.webp\'\)\] {
-    background-image: url('/assets/imagenes/bg-hero.webp');
   }
   .bg-cover {
     background-size: cover;
@@ -377,13 +348,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
@@ -457,27 +421,33 @@
 }
 @font-face {
   font-family: "Montserrat-Black";
-  src: url(/assets/fuentes/Montserrat-Black.ttf);
+  src: url("/assets/fuentes/Montserratblack.ttf") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url(/assets/fuentes/Montserrat-Blold.ttf);
+  src: url("/assets/fuentes/Montserrat-Blold.ttf") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-ExtraLight";
-  src: url(/assets/fuentes/Montserrat-ExtraLight.ttf);
+  src: url("/assets/fuentes/Montserrat-ExtraLight.ttf")format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url(/assets/fuentes/Montserrat-Medium.ttf);
+  src: url("/assets/fuentes/Montserrat-Medium.ttf") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url(/assets/fuentes/Montserrat-Regular.ttf);
+  src: url("/assets/fuentes/Montserrat-Regular.ttf") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat-SemiBold";
-  src: url(/assets/fuentes/Montserrat-SemiBold.ttf);
+  src: url('/assets/fuentes/MontserratsemiBold.ttf') format("woff2");
+  font-display: swap;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -496,11 +466,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -508,7 +473,6 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
     }
   }
 }

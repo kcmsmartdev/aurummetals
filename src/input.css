@@ -1,43 +1,53 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: "MontserratBlack";
-    src: url('./assets/fuentes/Montserrat-Black.ttf') format("truetype");
+
+@font-face{
+    font-family: "Montserrat-Black";
+    src: url("/assets/fuentes/Montserratblack.ttf") format("woff2");
     font-display: swap;
 }
 
+
 @font-face {
     font-family: "Montserrat-Bold";
-    src: url("/assets/fuentes/Montserrat-Blold.ttf") format("truetype");
+    src: url("/assets/fuentes/Montserrat-Blold.ttf") format("woff2");
+    font-display: swap;
 }
 
 
 @font-face {
     font-family: "Montserrat-ExtraLight";
-    src: url("/assets/fuentes/Montserrat-ExtraLight.ttf")format("truetype");
+    src: url("/assets/fuentes/Montserrat-ExtraLight.ttf")format("woff2");
+    font-display: swap;
 }
 
 
 @font-face {
     font-family: "Montserrat-Medium";
-    src: url("/assets/fuentes/Montserrat-Medium.ttf") format("truetype");
+    src: url("/assets/fuentes/Montserrat-Medium.ttf") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url("/assets/fuentes/Montserrat-Regular.ttf") format("truetype");
+    src: url("/assets/fuentes/Montserrat-Regular.ttf") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Montserrat-SemiBold";
-    src: url("/assets/fuentes/Montserrat-SemiBold.ttf") format("truetype");
+    src: url('/assets/fuentes/MontserratsemiBold.ttf') format("woff2");
+    font-display: swap;
 }
 
+
 @theme{
---font-Montserrat-Black: "MontserratBlack";
---font-Montserrat-Bold: "Montserrat-Bold", "sans-serif";
---font-Montserrat-ExtraLight: "Montserrat-ExtraLight", "sans-serif";
---font-Montserrat-Medium: "Montserrat-Medium", "sans-serif";
---font-Montserrat-Regular: "Montserrat-Regular", "sans-serif";
---font-Montserrat-SemiBold: "Montserrat-SemiBold", "sans-serif";
+--font-Montserrat-Black: "Montserrat-Black";
+--font-Montserrat-Bold: "Montserrat-Bold";
+--font-Montserrat-ExtraLight: "Montserrat-ExtraLight";
+--font-Montserrat-Medium: "Montserrat-Medium";
+--font-Montserrat-Regular: "Montserrat-Regular";
+--font-Montserrat-SemiBold: "Montserrat-SemiBold";
 }
+
+
