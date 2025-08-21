@@ -979,6 +979,12 @@
   .text-\[\#fffff\] {
     color: #fffff;
   }
+  .text-\[0\.875\] {
+    color: 0.875;
+  }
+  .text-\[0\.\] {
+    color: 0.;
+  }
   .text-\[1re\] {
     color: 1re;
   }
