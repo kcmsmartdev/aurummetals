@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Montserrat-Bold";
-    src: url("../assets/fuentes/Montserrat-Blold.ttf") format("truetype");
+    src: url("../assets/fuentes/Montserrat-Bold.ttf") format("truetype");
     font-display: swap;
 }
 
@@ -41,6 +41,20 @@
 }
 
 
+@font-face {
+    font-family: "ClimateCrisis";
+    src: url("../assets/fuentes/ClimateCrisis-Regular-VariableFont_YEAR.ttf") format("truetype");
+    
+}
+
+@font-face {
+    font-family: "CinzelDecorative";
+    src: url("../assets/fuentes/CinzelDecorative-Regular.ttf") format("truetype");
+    
+}
+
+
+
 @theme{
 --font-Montserrat-Black: 'Montserrat-Black';
 --font-Montserrat-Bold: "Montserrat-Bold";
@@ -48,6 +62,8 @@
 --font-Montserrat-Medium: "Montserrat-Medium";
 --font-Montserrat-Regular: "Montserrat-Regular";
 --font-Montserrat-SemiBold: "Montserrat-SemiBold";
+--font-Climatic: "ClimateCrisis";
+--font-CinzelDecorative: "CinzelDecorative"
 }
 
 
