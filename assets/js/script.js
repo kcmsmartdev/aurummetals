@@ -12,12 +12,14 @@ mAbrirMenu.addEventListener("click", function(){
     
     mAbrirMenuCerrar.classList.remove("hidden");
     mMenu.classList.remove("hidden");
+    document.body.style.overflow = "hidden"; 
     
 })
 mAbrirMenuCerrar.addEventListener("click", function(){
     mAbrirMenu.classList.remove("hidden");
     mAbrirMenuCerrar.classList.toggle("hidden");
     mMenu.classList.toggle("hidden");
+    document.body.style.overflow = "";
 })
 
 let mostrarPrimero = true;
@@ -25,9 +27,13 @@ function alternarTitulos() {
     if (mostrarPrimero) {
       titulo1.classList.add("hidden");
       titulo2.classList.remove("hidden");
+      btn2.classList.add("bg-[#FFD585]");
+    btn1.classList.remove("bg-[#FFD585]");
     } else {
       titulo2.classList.add("hidden");
       titulo1.classList.remove("hidden");
+       btn1.classList.add("bg-[#FFD585]");
+    btn2.classList.remove("bg-[#FFD585]");
     }
     mostrarPrimero = !mostrarPrimero; // cambia el estado
   }
@@ -35,13 +41,18 @@ function alternarTitulos() {
 btn1.addEventListener("click", function(){
     titulo1.classList.remove("hidden");
     titulo2.classList.add("hidden");
+    btn1.classList.add("bg-[#FFD585]");
+    btn2.classList.remove("bg-[#FFD585]")
     
 })
 
 btn2.addEventListener("click", function(){
     titulo1.classList.add("hidden");
     titulo2.classList.remove("hidden");
+     btn2.classList.add("bg-[#FFD585]");
+    btn1.classList.remove("bg-[#FFD585]");
     
 })
 
 setInterval(alternarTitulos, 10000);
+AOS.init();

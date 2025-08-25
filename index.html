@@ -9,9 +9,12 @@
     <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
     <meta name="description" content="Aurum Metals impulsa una minería justa y responsable en Perú. Ofrecemos comercialización de oro, intermediación comercial y exportación directa con transparencia, seguridad y compromiso con el desarrollo sostenible.">
     <script rel="preload" src="https://kit.fontawesome.com/8c2f1b82d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </head>
-<body class="w-full h-full relative ">
+<body class="w-full h-full relative">
     <header class="flex flex-col ">
         <div class="w-full lg:h-fit bg-[#323218] text-[0.75rem] text-[#FFD585] font-Montserrat-SemiBold p-3 md:px-12 lg:px-24 lg:flex justify-between items-center">
 
@@ -34,12 +37,34 @@
         <nav class="w-full flex justify-between items-center px-3 absolute top-20 lg:px-24 lg:top-14 font-Montserrat-SemiBold">
             <a href="/index.html"><img src="./assets/imagenes/logo-aurumMetals.webp" alt="logo-aurumMetals" width="60px" height="60px"></a>
             <ul class="w-full hidden lg:flex justify-end items-center gap-9 text-[#F3F3F3] text-[0.875rem]">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Actividad</a></li>
-                <li><a href="#">Responsabilidad</a></li>
-                <li><a href="#">Socios Estrategicos</a></li>
-                <li class="px-8 py-2 bg-[#D4AF37] rounded-2xl text-black"><a href="#">Contacto</a></li>
+                
+                <li><a href="/index.html" class="text-[#D4AF37]">Inicio</a></li>
+                
+                <li><a href="./page/sobre-nosotros.html" class="relative group text-white font-medium">
+                    Sobre nosotros
+                 <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#C9A44C] transition-all duration-300 group-hover:w-full"></span> </a>
+                </li>
+
+                <li><a href="./page/actividad.html" class="relative group text-white font-medium">
+                    Actividad
+                 <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#C9A44C] transition-all duration-300 group-hover:w-full"></span> </a>
+                </li>
+
+                <li><a href="./page/responsabilidad.html" class="relative group text-white font-medium">
+                   Responsabilidad
+                 <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#C9A44C] transition-all duration-300 group-hover:w-full"></span> </a>
+                </li>
+                
+                <li><a href="./page/socios-estrategicos.html" class="relative group text-white font-medium">
+                   Socios Estratégicos
+                 <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#C9A44C] transition-all duration-300 group-hover:w-full"></span> </a>
+                </li>
+                
+               
+                
+                <li class="px-8 py-2 bg-[#D4AF37] rounded-2xl text-black font-semibold transition-all duration-300 hover:bg-black hover:text-[#D4AF37] cursor-pointer">
+                <a href="./page/contacto.html">Contacto</a>
+                </li>
             </ul>
             <span id="menuBar" class="flex bg-amber-50/10 p-2 rounded-[100%] lg:hidden">
                 <img src="./assets/imagenes/icon-menu.png" width="45px" height="45px">
@@ -49,7 +74,7 @@
         </nav>
 
         <!-- MENU MÓVIL -->
-        <div id="menu-mobil" class="hidden w-full h-full bg-black   px-3  absolute top-20 lg:relative">
+        <div id="menu-mobil" class="hidden w-full h-full bg-black   px-3 lg:hidden absolute top-20 lg:relative z-50">
             <div class="w-full flex justify-between">
                 <a href="/index.html"><img src="./assets/imagenes/logo-aurumMetals.webp" alt="logo-aurumMetals" width="60px" height="60px"></a>
                 <span id="menuBar_cerrar" class="hidden bg-amber-50/10 p-2 rounded-[100%] lg:hidden">
@@ -58,11 +83,11 @@
             </div>
             <div class="flex flex-col items-center gap-5 text-white mt-10 text-3xl">
                 <a href="/index.html">Inicio</a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Actividad</a>
-            <a href="#">Responsabilidad</a>
-            <a href="#">Socios Estrategicos</a>
-            <a href="#">Contacto</a>
+            <a href="./page/sobre-nosotros.html">Sobre nosotros</a>
+            <a href="./page/actividad.html">Actividad</a>
+            <a href="./page/responsabilidad.html">Responsabilidad</a>
+            <a href="./page/socios-estrategicos.html">Socios Estratégicos</a>
+            <a href="./page/contacto.html">Contacto</a>
             </div>
             
         </div>
@@ -80,12 +105,23 @@
                 <a id="btnTitulo1" href="#" class="w-[35px] h-[14px] border-2 border-[#FFD585] rounded-2xl">     </a>
                 <a id="btnTitulo2" href="#" class="w-[35px] h-[14px] border-2 border-[#FFD585] bg-[#FFD585] rounded-2xl">     </a>
             </div>
-            <a href="#" class="px-10  py-4 bg-[#CBA135] rounded-2xl font-Montserrat-Regular font-bold text-center text-[1rem] mt-5 mb-40">CONOCE NUESTROS SERVICIOS</a>
+            
+            <a href="#"
+            class="relative overflow-hidden px-5  z-0px-10 py-4 bg-[#CBA135] rounded-2xl 
+                font-Montserrat-Regular font-bold text-center text-[1rem] 
+                mt-5 mb-40 text-white transition-all duration-300 
+                 hover:bg-black hover:text-[#CBA135] group">
+            CONOCE NUESTROS SERVICIOS
+            <!-- Efecto brillo -->
+            <span class="absolute z-0 inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent 
+               translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out">
+            </span>
+            </a>
         </section>
 
         <!--Section estadisticas-->
 
-       <div class="w-full bg-[#0E0E0E] grid grid-cols-2 lg:grid-cols-4 gap-6 font-Climatic p-3 lg:px-24 text-center items-center justify-center  text-[#818181] text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]">
+       <div class="w-full bg-[#0E0E0E] grid grid-cols-2 lg:grid-cols-4 gap-6 font-Climatic p-3 lg:px-24 text-center items-center justify-center  text-[#818181] text-[1rem] md:text-[1.25rem] lg:text-[1.5rem]" >
   
         
         <div class="flex flex-col">
@@ -99,7 +135,7 @@
             <span class="block font-CinzelDecorative">CLIENTES</span>
         </div>
  
-        <div class="flex flex-col"">
+        <div class="flex flex-col">
                 +200
                 <span class="block font-CinzelDecorative">OPERACIONES</span>
         </div>
@@ -114,13 +150,13 @@
 
     <!--Sección sobre nuestros servicios-->
     <section class="w-full flex flex-col lg:flex-row mt-10 p-3 gap-5 lg:px-24 items-center">
-        <div class="w-full flex justify-end">
+        <div class="w-full flex justify-end" data-aos="fade-right">
             <img src="./assets/imagenes/AURUM-METALS-SERVICIOS_1.webp"  alt="imagen-servicios-aurummetals" width="646px" height="646px">
         </div>
-        <div class="w-full h-full flex flex-col">
-             <span class="w-fit p-3 bg-[#000000] text-[#FFD585] rounded-[2rem] text-[0.75rem] font-Montserrat-SemiBold mt-10">Nuestros Servicios</span>
-            <h3 class="font-Montserrat-Black text-[1.25rem] lg:text-[2rem] uppercase mt-10">Crecemos contigo, fortaleciendo comunidades.</h3>
-            <p class="w-full lg:w-[650px] text-[1rem] font-Montserrat-Medium mt-2 text-[#4C4C4C]">
+        <div class="w-full h-full flex flex-col" data-aos="fade-left">
+             <span class="w-fit text-[#CBA135] rounded-[2rem] text-[0.75rem] font-Montserrat-Medium mt-10">Nuestros Servicios</span>
+            <h3 class="font-Montserrat-Black text-[1.25rem] lg:text-[2rem] uppercase mt-2">Crecemos contigo, fortaleciendo comunidades.</h3>
+            <p class="w-full lg:w-[650px] text-[1.125rem] font-Montserrat-Medium mt-2 text-[#4C4C4C]">
                 Impulsamos el crecimiento de nuestros clientes a través de soluciones comerciales responsables, 
                 generando valor sostenible que contribuye al desarrollo de las comunidades con las que trabajamos.
             </p>
@@ -148,7 +184,12 @@
 
             </div>
 
-            <a href="#" class="w-[150px] h-[44px] border-2 border-[#CBA135] text-[#CBA135] font-Montserrat-Medium  rounded-4xl flex justify-center items-center mt-10">Ver mas</a>
+                <a href="#"
+                class="w-[150px] h-[44px] border-2 border-[#CBA135] text-[#CBA135] 
+                        font-Montserrat-Medium rounded-4xl flex justify-center items-center mt-10
+                        transition-all duration-300 hover:bg-[#CBA135] hover:text-black">
+                Ver más
+                </a>
         </div>
 
     </section>
@@ -156,20 +197,26 @@
     <!--Seccion sobre Nosotros-->
 
     <section class="w-full h-full lg:h-[600px] flex flex-col lg:flex-row mt-20 relative">
-        <img src="./assets/imagenes/fondo-logo.webp" alt="fondo-aurum" class="absolute z-2 top-30 lg:left-30">
+        <img src="./assets/imagenes/fondo-logo.webp" alt="fondo-aurum" class="absolute z-10 top-30 lg:left-30">
 
         <div class="w-full h-full bg-[#374F4A] p-3 lg:px-24 flex flex-col justify-center items-start mt-20 gap-4 relative" >
+            
             <div class="mt-10">
-                        <span class="w-fit p-3 bg-[#000000] text-[#FFD585] rounded-[2rem] text-[0.75rem] font-Montserrat-SemiBold">Sobre Nosotros</span>
+                    <span class="w-fit text-[#FFD585] rounded-[2rem] text-[0.75rem] font-Montserrat-SemiBold">Sobre Nosotros</span>
             </div>
 
-            <h4 class="font-Montserrat-Black text-[1.25rem] lg:text-[2rem] uppercase mt-10 text-[#ffff]">¿Por qué Aurum Metals?</h4>
-            <p class="w-full lg:w-[531px] text-[1rem] font-Montserrat-Medium mt-2 text-[#DDDDDD]">Trabajamos continuamente bajo un conjunto de estándares exigentes y consistentes, aplicándolos en todo lo que hacemos, 
+            <h4 class="font-Montserrat-Black text-[1.25rem] lg:text-[2rem] uppercase z-20  text-[#ffff]">¿Por qué Aurum Metals?</h4>
+            <p class="w-full lg:w-[531px] text-[1.125rem] font-Montserrat-Medium mt-2 z-20 text-[#DDDDDD]" data-aos="fade-up">Trabajamos continuamente bajo un conjunto de estándares exigentes y consistentes, aplicándolos en todo lo que hacemos, 
                 cada día y en cada lugar donde operamos. Nuestra experiencia, compromiso y enfoque responsable nos permiten ofrecer 
                 soluciones confiables que generan valor para nuestros clientes y contribuyen al desarrollo sostenible de las 
                 comunidades con las que colaboramos.</p>
 
-            <a href="#" class="w-[150px] h-[44px] border-2 border-[#FFD585] text-[#FFD585] font-Montserrat-Medium  rounded-4xl flex justify-center items-center mt-10">Ver mas</a>
+            <a href="#"
+                class="w-[150px] h-[44px] border-2 z-20 border-[#CBA135] text-[#CBA135] 
+                        font-Montserrat-Medium rounded-4xl flex justify-center items-center mt-10
+                        transition-all duration-300 hover:bg-[#CBA135] hover:text-black" data-aos="fade-up">
+                Ver más
+                </a>
 
             <img src="./assets/imagenes/Minero_con_oro-_1_.webp" class="border-[1rem] rounded-[2rem] border-[#ffff] lg:absolute lg:bottom-0 lg:right-[140px] mt-10 lg:mt-0" alt="imagen_de_minero" width="434px" height="583px">
           
@@ -182,7 +229,7 @@
     <section class="w-full h-full flex flex-col lg:flex-row justify-center mt-12 lg:mt-44 gap-5">
         <div class="w-full bg-[#FEF5E3] mt-20 lg:rounded-br-[2rem] lg:rounded-tr-[2rem] p-3 lg:px-24 gap-2 flex flex-col justify-end">
             <h5 class="font-Montserrat-Black text-[#000000] text-[1.25rem] lg:text-[2rem] mt-10">Responsabilidad</h5>
-           <p class="w-full lg:w-[531px] text-[1rem] font-Montserrat-Regular mt-2 text-[#000]">
+           <p class="w-full lg:w-[531px] text-[1.125rem] font-Montserrat-Regular mt-2 text-[#000]">
             Desde nuestros inicios, nuestra misión es ser un ejemplo de empresa peruana y una referencia para 
             nuestros clientes en el exterior, brindando abastecimiento responsable, transparencia y trazabilidad desde el 
             corazón de la actividad.
@@ -190,7 +237,12 @@
 
            <img src="./assets/imagenes/responsabildad.webp" alt="imagen-respondabilidad" width="472px" height="285px" class="rounded-[2rem] mt-5">
 
-           <a href="#" class="w-[150px] h-[44px] border-2 border-[#CBA135] text-[#CBA135] font-Montserrat-Medium rounded-4xl flex justify-center items-center mt-5 mb-5">Ver mas</a>
+           <a href="#"
+                class="w-[150px] h-[44px] border-2 border-[#CBA135] text-[#CBA135] 
+                        font-Montserrat-Medium rounded-4xl flex justify-center items-center mt-10
+                        transition-all duration-300 hover:bg-[#CBA135] hover:text-black">
+                Ver más
+            </a>
         </div> 
 
 
@@ -198,12 +250,16 @@
             
             <img src="./assets/imagenes/sociosestrategicos.webp" alt="imagen-respondabilidad" width="472px" height="285px" class="rounded-[2rem] mt-10">
             <h6 class="font-Montserrat-Black text-[#000000] text-[1.25rem] lg:text-[2rem] mt-5">Socios estratégicos</h6>
-           <p class="w-full lg:w-[531px] text-[1rem] font-Montserrat-Regular mt-2 text-[#000]">
+           <p class="w-full lg:w-[531px] text-[1.125rem] font-Montserrat-Regular mt-2 text-[#000]">
             Empresa especializada en el manejo de carga, embargues y logística internacional, 
             comprometidos a proporcionar a sus clientes soluciones efectivas de transporte y logística.
            </p>
-
-          <a href="#" class="w-[150px] h-[44px] border-2 border-[#CBA135] text-[#CBA135] font-Montserrat-Medium rounded-4xl flex justify-center items-center mt-5">Ver mas</a>
+           <a href="#"
+                class="w-[150px] h-[44px] border-2 border-[#CBA135] text-[#CBA135] 
+                        font-Montserrat-Medium rounded-4xl flex justify-center items-center mt-10
+                        transition-all duration-300 hover:bg-[#CBA135] hover:text-black">
+                Ver más
+                </a>
         </div>
 
     </section>
@@ -285,35 +341,41 @@
 
         <span class=" text-[#000] font-Montserrat-Black text-[2rem] p-3">ESTAMOS ATENTOS PARA AYUDARTE</span>
 
-        <a href="#" class="bg-[#000] text-1.25rem px-10 py-3 text-[#FFFF] rounded-[1.25rem] font-Montserrat-SemiBold">Contáctanos</a>
+        <a href="#"
+         class="bg-black text-white text-[1.25rem] px-10 py-3 rounded-[1.25rem] 
+          font-Montserrat-SemiBold transition-all duration-300 
+          hover:bg-[#CBA135] hover:text-black hover:border-2 hover:border-black">
+         Contáctanos
+        </a>
+
     </section>
     </main>
-    <footer class="w-full h-full bg-[#1D1D19] flex flex-col gap-5 p-3 lg:px-24">
+    <footer class="w-full h-full bg-[#1D1D19] flex flex-col gap-5 p-3 lg:px-24 text-[1.125rem]">
                 <div class="flex flex-col lg:flex-row justify-between">
                     <div class="flex flex-col mt-5  lg:mt-20">
-                    <img src="./assets/imagenes/logo-aurumMetals.webp" alt="logo-aurumMetals" width="195px" height="195px">
+                    <img src="../assets/imagenes/logo-aurumMetals.webp" alt="logo-aurumMetals" width="195px" height="195px">
                     <div class="flex flex-col gap-1.5 mt-5">
-                        <span class="font-Montserrat-Medium text-[#fff] text-[1rem]">AURUM METALS SRL</span>
-                        <span class="font-Montserrat-Medium text-[#fff] text-[1rem]" >RUC: 20606010878</span>
+                        <span class="font-Montserrat-Medium text-[#fff] text-[1.125rem]">AURUM METALS SRL</span>
+                        <span class="font-Montserrat-Medium text-[#fff] text-[1.125rem]" >RUC: 20606010878</span>
                     </div>
 
                 </div>
 
                 <div class="fle flex-col mt-5 lg:mt-20">
-                    <span class="font-Montserrat-SemiBold text-[#B3B3B3] text-[1.25rem]">Site map</span>
+                    <span class="font-Montserrat-SemiBold text-[#B3B3B3] text-[1.125rem]">Site map</span>
                     <div class="flex flex-col gap-2 mt-8 ">
-                        <a href="/index.html" class="font-Montserrat-Medium text-[#fff] text-[1.25rem] tracking-tight ">Inicio</a>
-                        <a href="#" class="font-Montserrat-Medium text-[#fff] text-[1rem] tracking-tight ">Quiénes somos</a>
-                        <a href="#" class="font-Montserrat-Medium text-[#fff] text-[1rem] tracking-tight ">Actividad</a>
-                        <a href="#" class="font-Montserrat-Medium text-[#fff] text-[1rem] tracking-tight ">Responsabilidad</a>
-                        <a href="#" class="font-Montserrat-Medium text-[#fff] text-[1rem] tracking-tight ">Contacto</a>
+                        <a href="./index.html" class="font-Montserrat-Medium text-[#fff] text-[1.125rem] tracking-tight ">Inicio</a>
+                        <a href="./page/sobre-nosotros.html" class="font-Montserrat-Medium text-[#fff] text-[1.125rem] tracking-tight ">Sobre nosotros</a>
+                        <a href="./page/actividad.html" class="font-Montserrat-Medium text-[#fff] text-[1.125rem] tracking-tight ">Actividad</a>
+                        <a href="./page/responsabilidad.html" class="font-Montserrat-Medium text-[#fff] text-[1.125rem] tracking-tight ">Responsabilidad</a>
+                        <a href="./page/contacto.html" class="font-Montserrat-Medium text-[#fff] text-[1.125rem] tracking-tight ">Contacto</a>
                     </div>
 
                 </div>
 
                 <div class="fle flex-col mt-5 lg:mt-20">
-                    <span class="font-Montserrat-SemiBold text-[#B3B3B3] text-[1.25rem]">Información</span>
-                    <div class="flex flex-col gap-2 mt-8 ">
+                    <span class="font-Montserrat-SemiBold text-[#B3B3B3] text-[1.125rem]">Información</span>
+                    <div class="flex flex-col gap-4 mt-8 ">
                         <article class="flex flex-row items-center gap-0.5">
                             <i class="fa-solid fa-phone" style="color: #fff;;"></i>
                             <a href="callto:+51 975889555" class="font-Montserrat-Medium text-[#fff] text-[1rem] tracking-tight ">+51 975889555</a>
@@ -327,7 +389,7 @@
 
                         <article class="flex flex-row items-center gap-0.5">
                             <i class="fa-solid fa-location-dot" style="color: #fff;"></i>
-                            <a href="#" class="font-Montserrat-Medium text-[#fff] text-[1rem] tracking-tight ">Av. Elmer Faucett - <br>
+                            <a href="#" class="font-Montserrat-Medium text-[#fff] text-[1rem] tracking-tight ">Av. Elmer Faucett - 
                                                                                                                     Tomas Val Nro. E1 Int. 303e <br>
                                                                                                                     (Centro Aereo Comercial)</a>
                         </article>
