@@ -3,40 +3,40 @@
 
 @font-face{
     font-family: "Montserrat-Black";
-    src: url("../assets/fuentes/Montserratblack.ttf") format("truetype");
+    src: url("../assets/fuentes/Montserratblack.ttf") format("woff2");
     font-display: swap;
 }
 
 
 @font-face {
     font-family: "Montserrat-Bold";
-    src: url("../assets/fuentes/Montserrat-Bold.ttf") format("truetype");
+    src: url("../assets/fuentes/Montserrat-Bold.ttf") format("woff2");
     font-display: swap;
 }
 
 
 @font-face {
     font-family: "Montserrat-ExtraLight";
-    src: url("../assets/fuentes/Montserrat-ExtraLight.ttf")format("truetype");
+    src: url("../assets/fuentes/Montserrat-ExtraLight.ttf")format("woff2");
     font-display: swap;
 }
 
 
 @font-face {
     font-family: "Montserrat-Medium";
-    src: url("../assets/fuentes/Montserrat-Medium.ttf") format("truetype");
+    src: url("../assets/fuentes/Montserrat-Medium.ttf") format("woff2");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url("../assets/fuentes/Montserrat-Regular.ttf") format("truetype");
+    src: url("../assets/fuentes/Montserrat-Regular.ttf") format("woff2");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Montserrat-SemiBold";
-    src: url('../assets/fuentes/MontserratsemiBold.ttf') format("truetype");
+    src: url('../assets/fuentes/MontserratsemiBold.ttf') format("woff2");
     font-display: swap;
 }
 
@@ -44,13 +44,14 @@
 @font-face {
     font-family: "ClimateCrisis";
     src: url("../assets/fuentes/ClimateCrisis-Regular-VariableFont_YEAR.ttf") format("truetype");
+    font-display: swap;
     
 }
 
 @font-face {
     font-family: "CinzelDecorative";
     src: url("../assets/fuentes/CinzelDecorative-Regular.ttf") format("truetype");
-    
+    font-display: swap;
 }
 
 
